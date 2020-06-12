@@ -2,8 +2,6 @@ import json
 import datetime
 
 def handler(event, context):
-    if event is not None:
-        num = 1
     data = {
         'output': 'Hello World',
         'prueba': 'Test1'
