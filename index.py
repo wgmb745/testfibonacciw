@@ -9,7 +9,7 @@ def handler(event, context):
         'timestamp': datetime.datetime.utcnow().isoformat()
     }
     """
-    data = calcular(numero)
+    data = calcular(1000)
     
     return {'statusCode': 200,
             'body': json.dumps(data),
