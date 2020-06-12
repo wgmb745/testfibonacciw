@@ -3,21 +3,23 @@ import datetime
 
 def handler(event, context):
     
-    n = 0
+    n = 1
     if event is not None:
-        n = event['queryStringParameters']['numfib']
+        n = event["queryStringParameters"]["numfib"]
     
     lista = []
     cadena = ''
+    
+    # Ciclo para cadena de fibonacci
     a, b = 0,1
     while a < n:
         #print(a, end=' ')
         cadena = cadena + str(a) + ' '
         a, b = b, a+b
-    fibonacci = lista.append(cadena)
+    fibo = lista.append(cadena)
     
     data = {
-        'Cod.Fibonacci': fibonacci,
+        'Cod.Fibonacci': fibo,
         'timestamp': datetime.datetime.utcnow().isoformat()
     }
     
