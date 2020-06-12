@@ -2,10 +2,20 @@ import json
 import datetime
 
 def handler(event, context):
+    
+    n = event[‘queryStringParameters’][‘numfib’]
+    
+    lista = []
+    cadena = ''
+    a, b = 0,1
+    while a < n:
+        #print(a, end=' ')
+        cadena = cadena + str(a) + ' '
+        a, b = b, a+b
+    fibonacci = lista.append(cadena)
+    
     data = {
-        'output': 'Hello World',
-        'prueba': 'Test1'
-        'prueba2': 'Test2'
+        'Cod.Fibonacci': fibonacci,
         'timestamp': datetime.datetime.utcnow().isoformat()
     }
     
