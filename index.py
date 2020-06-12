@@ -5,12 +5,11 @@ def calcular(n):
     return n
 
 def handler(event, context):
-    """
-    data = {
-        'output': 'Hello World',
-        'timestamp': datetime.datetime.utcnow().isoformat()
-    }
-    """
+    #data = {
+    #    'output': 'Hello World',
+    #    'timestamp': datetime.datetime.utcnow().isoformat()
+    #}
+    
     data = calcular(1000)
     
     return {'statusCode': 200,
