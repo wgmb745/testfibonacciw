@@ -1,7 +1,7 @@
 import json
 import datetime
 
-def calcular(self,n):
+def calcular(n):
     return n
 
 def handler(event, context):
