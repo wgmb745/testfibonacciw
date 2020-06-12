@@ -2,12 +2,12 @@ import json
 import datetime
 
 def handler(event, context):
-    lista = []
-    for i in event:
-        lista.append(i)
+    #lista = []
+    #for i in event:
+    #    lista.append(i)
     data = {
         'output': 'Hello World',
-        'Lista': lista,
+        'Lista': event,
         'timestamp': datetime.datetime.utcnow().isoformat()
     }
     
