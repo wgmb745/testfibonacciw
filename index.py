@@ -1,6 +1,8 @@
 import json
 import datetime
 
+def calcular(self,n):
+    return n
 
 def handler(event, context):
     """
@@ -13,7 +15,4 @@ def handler(event, context):
     
     return {'statusCode': 200,
             'body': json.dumps(data),
-            'headers': {'Content-Type': 'application/json'}}
-
-def calcular(self,n):
-    return n
+            'headers': {'Content-Type': 'application/json'}
