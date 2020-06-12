@@ -10,8 +10,8 @@ def handler(event, context):
     #    'output': 'Hello World',
     #    'timestamp': datetime.datetime.utcnow().isoformat()
     #}
-    
-    data = calcular(1000)
+    n = 1000
+    data = calcular(n)
     
     return {'statusCode': 200,
             'body': json.dumps(data),
