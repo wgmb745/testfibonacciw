@@ -6,12 +6,9 @@ def calcular(n):
     return n
 
 def handler(event, context):
-    #data = {
-    #    'output': 'Hello World',
-    #    'timestamp': datetime.datetime.utcnow().isoformat()
-    #}
-    n = 1000
-    data = calcular(n)
+    data = {
+        'output': 'Hello World',
+        'timestamp': datetime.datetime.utcnow().isoformat()
     
     return {'statusCode': 200,
             'body': json.dumps(data),
