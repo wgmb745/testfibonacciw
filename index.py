@@ -7,9 +7,9 @@ def handler(event, context):
     #    lista.append(i)
     data = {
         'output': 'Hello World',
-        'prueba', 'Test1'
+        'prueba': 'Test1'
         'lista': event,
-        'prueba2', 'Test2'
+        'prueba2': 'Test2'
         'timestamp': datetime.datetime.utcnow().isoformat()
     }
     
