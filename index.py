@@ -3,7 +3,7 @@ import datetime
 
 def handler(event, context):
     
-    n = event[‘queryStringParameters’][‘numfib’]
+    n = event['queryStringParameters']['numfib']
     
     lista = []
     cadena = ''
