@@ -2,6 +2,7 @@ import json
 import datetime
 
 def calcular(n):
+    n += 10
     return n
 
 def handler(event, context):
