@@ -17,7 +17,7 @@ def handler(event, context):
     data = {
         'result':result,
         'numfib':lista,
-        'output':'Test'
+        'output':'Test',
         'timestamp':datetime.datetime.utcnow().isoformat()
     }
     
