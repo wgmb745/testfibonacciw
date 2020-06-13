@@ -15,7 +15,6 @@ def handler(event, context):
     lista.append(cadena)
     
     data = {
-        'result':result,
         'numfib':lista,
         'output':'Test',
         'timestamp':datetime.datetime.utcnow().isoformat()
