@@ -2,7 +2,7 @@ import json
 import datetime
 
 def handler(event, context):
-    n = int(1)
+    n = int(1000)
     if event is not None:
         n = int(event["queryStringParameters"]["numfib"])
     lista = []
