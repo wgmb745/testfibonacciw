@@ -3,9 +3,9 @@ import datetime
 
 def handler(event, context):
     
-    n = 1
+    n = int(1)
     if event is not None:
-        n = event["queryStringParameters"]["numfib"]
+        n = int(event["queryStringParameters"]["numfib"])
     
     lista = []
     cadena = ''
