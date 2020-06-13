@@ -19,7 +19,8 @@ def handler(event, context):
     fibo = lista.append(cadena)
     
     data = {
-        'Cod.Fibonacci': fibo,
+        #'fibonacci': fibo,
+        'fibonacci': cadena,
         'timestamp': datetime.datetime.utcnow().isoformat()
     }
     
