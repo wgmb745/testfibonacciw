@@ -18,7 +18,7 @@ def handler(event, context):
         'result':result,
         'numfib':lista,
         'output':'Test'
-        'timestamp': datetime.datetime.utcnow().isoformat()
+        'timestamp':datetime.datetime.utcnow().isoformat()
     }
     
     return {'statusCode': 200,
