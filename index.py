@@ -20,7 +20,7 @@ def handler(event, context):
     
     data = {
         #'fibonacci': fibo,
-        'fibonacci': cadena,
+        'cadena': cadena,
         'timestamp': datetime.datetime.utcnow().isoformat()
     }
     
